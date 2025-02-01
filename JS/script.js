@@ -2,6 +2,7 @@ const wordtext = document.querySelector('.words');
 const countbtn = document.querySelector('.countbtn');
 const resetbtn = document.querySelector('.reset');
 const wordcount = document.querySelector('#word-count');
+const charcount = document.querySelector('#char-count');
 
 function countWords(){
     const text = wordtext.value.trim();
