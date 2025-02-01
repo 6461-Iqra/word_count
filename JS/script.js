@@ -5,8 +5,11 @@ const wordcount = document.querySelector('#word-count');
 
 function countWords(){
     const text = wordtext.value.trim();
-    const words = text.split(' ');
+    const words = text.split(/\s+/); // Split text by whitespace
+    const characters = text.replace(/\s+/g, ''); // Remove all whitespace to count characters
+    
     wordcount.innerHTML = words.length;
+    charcount.innerHTML = characters.length;
 }
 
 countbtn.addEventListener('click', countWords);
