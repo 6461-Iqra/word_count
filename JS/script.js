@@ -18,6 +18,8 @@ countbtn.addEventListener('click', countWords);
 function reset(){
     wordtext.value = '';
     wordcount.innerHTML = 0;
+    charcount.innerHTML = 0;
+
 }
 
 resetbtn.addEventListener('click', reset);
